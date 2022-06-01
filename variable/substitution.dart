@@ -10,4 +10,10 @@ void main() {
   num = num + 1;
   num++;
   print(num);
+
+  // 代入演算子
+  int number = 0;
+  number = number + 3;
+  number += 3;
+  print(number);
 }
