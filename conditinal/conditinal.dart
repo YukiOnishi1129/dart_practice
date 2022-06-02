@@ -15,4 +15,17 @@ void main() {
   // 三項演算子
   int number = 0;
   number == 0 ? print("numは0です") : print('numは0ではないです');
+
+  // スコープ 変数を使える範囲
+  int numbers = 0;
+
+  print(numbers);
+
+  if (numbers == 0) {
+    int numbers2 = 1;
+    print(numbers);
+    print(numbers2);
+  }
+
+  // print(numbers2); // ifの中のスコープの変数は使えない
 }
