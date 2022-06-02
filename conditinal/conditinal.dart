@@ -30,17 +30,43 @@ void main() {
   // print(numbers2); // ifの中のスコープの変数は使えない
 
   // switch文
-  int num = 2;
+  // int num = 2;
 
-  switch (num) {
-    case 0:
-      print('numは0です');
+  // switch (num) {
+  //   case 0:
+  //     print('numは0です');
+  //     break;
+  //   case 1:
+  //     print('numは1です');
+  //     break;
+  //   default:
+  //     print('numは0でも1でもないです');
+  //     break;
+  // }
+
+  // enum: 列挙
+
+  String animal = 'dog';
+  Animal animal2 = Animal.dog;
+
+  switch (animal2) {
+    case Animal.dog:
+      print('犬です');
       break;
-    case 1:
-      print('numは1です');
+    case Animal.cat:
+      print('猫です');
+      break;
+    case Animal.bear:
+      print('熊です');
       break;
     default:
-      print('numは0でも1でもないです');
+      print('わかりません');
       break;
   }
+}
+
+enum Animal {
+  dog,
+  cat,
+  bear,
 }
