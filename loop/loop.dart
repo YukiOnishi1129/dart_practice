@@ -6,9 +6,16 @@ void main() {
   // }
 
   // for in
-  List<String> nameList = ['大西', '雄貴', 'いいお肉'];
+  // List<String> nameList = ['大西', '雄貴', 'いいお肉'];
 
-  for (String name in nameList) {
-    print(name);
+  // for (String name in nameList) {
+  //   print(name);
+  // }
+
+  // while
+  int num = 5;
+  while (num > 0) {
+    print(num);
+    num--;
   }
 }
