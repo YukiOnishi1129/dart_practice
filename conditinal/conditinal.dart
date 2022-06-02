@@ -11,4 +11,8 @@ void main() {
   if (age >= 20 && age < 30) {
     print('20代です。');
   }
+
+  // 三項演算子
+  int number = 0;
+  number == 0 ? print("numは0です") : print('numは0ではないです');
 }
